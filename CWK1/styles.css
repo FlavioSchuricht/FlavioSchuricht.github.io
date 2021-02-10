@@ -1,0 +1,192 @@
+.TopDiv{
+    background-color: lightskyblue;
+    text-align: center;
+    padding: 5px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+}
+
+h5 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20;
+}
+
+td {
+    padding-left: 135px;
+    padding-right: 135px
+}
+
+td:hover {
+    color: blue;
+    background-color: white;
+}
+
+.MenuBar{
+    background-color: lightblue;
+    padding-top: 1px;
+}
+
+.Background{
+    background-color: lightgray;
+    height: 920px;
+}
+
+.BackgroundEqui{
+    background-color: lightgray;
+    height: 2999px;
+}
+
+.BackgroundSpot{
+    background-color: lightgray;
+    height: 2660px;
+}
+
+.BackgroundPic{
+    background-color: lightgray;
+    height: 10500px;
+}
+
+.Main{
+    background-color: lightgray;
+    margin-left: 10%;
+}
+
+.Left{
+    padding-left: 10%;
+    background-color: lightgray;
+    width: 60%;
+    float:left;
+}
+
+.LeftSpots{
+    padding-left: 10%;
+    background-color: lightgray;
+    width: 30%;
+    float:left;
+}
+
+.Leftleft{
+    padding-left: 10%;
+    background-color: lightgray;
+    width: 15%;
+    float:left;
+}
+
+.Leftmid{
+    background-color: lightgray;
+    width: 25%;
+    float:left;
+}
+
+.Right{
+    width: 28%;
+    float:right;
+    /*margin-right: 20px;*/
+}
+
+.RightSpots{
+    padding-top: 5%;
+    width: 60%;
+    float:right;
+    /*margin-right: 20px;*/
+}
+
+.Rightmid{
+    padding-left: 10%;
+    width: 15%;
+    float:left;
+    /*margin-right: 20px;*/
+}
+
+.Rightright{
+    width: 25%;
+    float:right;
+    /*margin-right: 20px;*/
+}
+
+.RightPic{
+    background-color: lightgray;
+    padding-left: 5%;
+    width: 45%;
+    float:right;
+}
+
+.LeftPic{
+    background-color: lightgray;
+    width: 45%;
+    padding-left: 5%;
+    float:left;
+}
+
+
+.imgEqui{
+    width: 70%; 
+    padding: 4px
+}
+
+.Gallery {
+    width: 80%;
+    padding: 1%;
+}
+
+
+.GalleryV {
+    width: 95%;
+    padding: 1%;
+}
+
+.logbook{
+    width: 70%;
+}
+
+.About{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.dspots{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+.lilin{
+    padding-left: 5%;
+}
+
+.lilmorein{
+    padding-left: 10%;
+}
+
+.Video{
+padding-left: 8%;
+padding-top: 100px;
+}
+
+.center{
+    margin-left: 30%;
+}
