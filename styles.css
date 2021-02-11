@@ -66,7 +66,7 @@ td:hover {
 
 .BackgroundPic{
     background-color: lightgray;
-    height: 10500px;
+    height: 9400px;
 }
 
 .Main{
@@ -172,6 +172,10 @@ td:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     padding-left: 10%;
+}
+.pequi{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
 }
 
 .lilin{
