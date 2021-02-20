@@ -34,9 +34,13 @@ a {
     font-size: 20;
 }
 
-td {
-    padding-left: 135px;
-    padding-right: 135px
+table{
+    width: 100%;
+}
+
+.tdpadding{
+    width: 15%;
+    text-align: center;
 }
 
 td:hover {
@@ -56,7 +60,7 @@ td:hover {
 
 .BackgroundEqui{
     background-color: lightgray;
-    height: 2999px;
+    height: 3050px;
 }
 
 .BackgroundSpot{
@@ -94,8 +98,8 @@ td:hover {
 }
 
 .Leftleft{
-    padding-left: 10%;
     background-color: lightgray;
+    padding-left: 10%;
     width: 15%;
     float:left;
 }
@@ -115,11 +119,17 @@ td:hover {
 .RightSpots{
     padding-top: 5%;
     width: 60%;
-    float:right;
+    float: right;
     /*margin-right: 20px;*/
 }
 
+.RightBrevet{
+    width: 60%;
+    float: right;
+}
+
 .Rightmid{
+    background-color: lightgray;
     padding-left: 10%;
     width: 15%;
     float:left;
@@ -127,6 +137,7 @@ td:hover {
 }
 
 .Rightright{
+    background-color: lightgray;
     width: 25%;
     float:right;
     /*margin-right: 20px;*/
@@ -153,8 +164,8 @@ td:hover {
 }
 
 .imgbrevet{
-    width: 50%; 
-    padding: 5%;
+    width: 600px; 
+    padding-left: 5%;
 }
 
 .Gallery {
@@ -197,10 +208,15 @@ td:hover {
 }
 
 .Video{
-padding-left: 8%;
+padding-left: 10%;
 padding-top: 100px;
 }
 
 .center{
     margin-left: 30%;
+}
+
+.BrevetHeading{
+    padding-left: 10%;
+    padding-top: 1%;
 }
