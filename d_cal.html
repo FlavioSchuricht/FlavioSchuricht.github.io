@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body onload="calOnLoad()">
+    <div class="BackgroundCal">
+        <div class="TopDiv">
+            <h1>Flavios Divingpage</h1>
+        </div>
+        <div class="MenuBar">
+            <p>
+                <table>
+                    <td class="tdpadding">
+                        <h2><a href="index.html">Home</a></h2>
+                    </td>
+                    <td class="tdpadding">
+                        <h2><a href="d_equipment.html">Equipment</a></h2>
+                    </td>
+                    <td class="tdpadding">
+                        <h2><a href="d_brevet.html">Brevet</a></h2>
+                    </td>
+                    <td class="tdpadding">
+                        <h2><a href="d_cal.html">Calculate Dive</a></h2>
+                    </td>
+                    <td class="tdpadding">
+                        <h2><a href="d_pictures.html">Gallery</a></h2>
+                    </td>
+                    <td class="tdpadding">
+                        <h2><a href="d_spot.html">Beautiful Divingspots</a></h2>
+                    </td>
+                </table>
+            </p>
+        </div>
+        <p >
+             <h3 style="padding-left: 5%;">Calculate your Dive</h3>
+        </p>
+        <table>
+            <th>
+                <p>
+                    <Select name="Calculations" onchange="showRightInput()" id="Calculations">
+                        <option vlaue="nothing" id="NaN">Choose calulation</option>
+                        <option value="1" id="SAC">Surface Air Consumption</option>
+                        <option value="2" id="PlanDive">Plan Dive</option>
+                        <option value="3" id="Cylinder">Choose Cylinder</option>
+                    </Select>
+        
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+        
+                    <!-- Surface Air Consumption -->
+                    <div id="SACdiv">
+                        <input type="text" id="SACVT" placeholder="Total Volume of Cylinder">
+                        <label>[Liter]</label>
+                        <br>
+                        <input type="text" id="SACVC" placeholder="Consumed Volume">
+                        <label>[Bar]</label>
+                        <br>
+                        <input type="text" id="SACT" placeholder="Duration">
+                        <label>[Min.]</label>
+                        <br>
+                        <input type="text" id="SACD" placeholder="Average depth">
+                        <label >[Meter]</label>
+                        <br>
+                        <button onclick="CalSac()">Calculate</button>
+                        <br>
+                        <output id="SacOutput"></label>
+                    </div>
+        
+        
+                    <!-- PlanDive -->
+                    <div id="PlanDivediv">
+                        <input type="text" id="BottomTime" placeholder="Time at max depth">
+                        <label >[Min.]</label>
+                        <br>
+                        <input type="text" id="PlanDepth" placeholder="Maximal Depth">
+                        <label >[Meter]</label>
+                        <br>
+                        <input type="text" id="PlanSAC" placeholder="Surface Air Consumption">
+                        <label >[l/min]</label>
+                        <br>
+                        <label>Select your highest Brevet</label>
+                        <br>
+                        <input type="checkbox" id="Brevet1" name="Brevet1">
+                        <label for="Brevet1">Brevet*</label>
+                        <input type="checkbox" id="Brevet2" name="Brevet2">
+                        <label for="Brevet2">Brevet**</label>
+                        <input type="checkbox" id="Brevet3" name="Brevet3">
+                        <label for="Brevet3">Brevet***</label>
+                        <br>
+                        <button onclick="CalPlan()">Calculate</button>
+                        <br>
+                        <output id="Planout"></label>
+                    </div>
+        
+                    <!-- Choose Cylinder-->
+                    <div id="Cylinderdiv">
+                        <input type="text" id="AirConsumption" placeholder="Airconsumption">
+                        <label>[Liter]</label>
+                        <br>
+                        <button onclick="CalCylinder()">Calculate</button>
+                        <br>
+                        <output id="Cylinderout"></label>
+                    </div>
+        
+                </p>
+            </th>
+            <th>
+                <canvas id="canvasDivePlan" class="divePlan" width="600" height="450">
+                    Your browser does not support the canvas element.
+                </canvas>
+            </th>
+        </table>
+        
+    </div>
+</body>

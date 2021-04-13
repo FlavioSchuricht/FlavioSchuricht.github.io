@@ -34,6 +34,29 @@ a {
     font-size: 20;
 }
 
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+output {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+option {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
 table{
     width: 100%;
 }
@@ -219,4 +242,21 @@ padding-top: 100px;
 .BrevetHeading{
     padding-left: 10%;
     padding-top: 1%;
+}
+
+.hidediv{
+    visibility: hidden;
+}
+
+.showdiv{
+    visibility: visible;
+}
+
+.divePlan{
+    border: 1px solid #000000;
+}
+
+.BackgroundCal{
+    background-color: lightgray;
+    height: 900px;
 }
