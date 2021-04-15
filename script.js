@@ -68,20 +68,26 @@ function showRightInput(){
             document.getElementById("SACdiv").style = "visibility: visible";
             document.getElementById("PlanDivediv").style = "visibility: hidden;";
             document.getElementById("Cylinderdiv").style = "visibility: hidden;";
-
+            document.getElementById("HowTodiv").style = "visibility: hidden;";
             break;
         case 2: //PlanDive
             document.getElementById("SACdiv").style = "visibility: hidden;";
             document.getElementById("PlanDivediv").style = "visibility: visible;";
             document.getElementById("Cylinderdiv").style = "visibility: hidden";
-
+            document.getElementById("HowTodiv").style = "visibility: hidden;";
             break;
         case 3: //Cylinder
             document.getElementById("Cylinderdiv").style = "visibility: visible;";
             document.getElementById("SACdiv").style = "visibility: hidden;";
             document.getElementById("PlanDivediv").style = "visibility: hidden;";
-
-
+            document.getElementById("HowTodiv").style = "visibility: hidden;";
+            break;
+        case 4:
+            document.getElementById("Cylinderdiv").style = "visibility: hidden;";
+            document.getElementById("SACdiv").style = "visibility: hidden;";
+            document.getElementById("PlanDivediv").style = "visibility: hidden;";
+            document.getElementById("HowTodiv").style = "visibility: visible;";
+            break;
     }
 }
 function calOnLoad(){
@@ -223,7 +229,7 @@ function drawDivePlan(bottomTime, totalTime, maxDepth){
     //maxdepth
     graphics.moveTo(maxDepth,maxDepth*10);
     var x = parseInt(maxDepth*5,10) + parseInt(bottomTime*20,10);
-    graphics.fillText("max depth", maxDepth, parseInt(maxDepth*10+10,10));
+    graphics.fillText("max depth at "+maxDepth+"m", maxDepth, parseInt(maxDepth*10+10,10));
 
     graphics.lineTo(x, maxDepth*10);
 
@@ -235,7 +241,7 @@ function drawDivePlan(bottomTime, totalTime, maxDepth){
             graphics.lineTo(parseInt(x+(maxDepth/2)) ,(maxDepth/2)*10);
             
             //deep deco
-            graphics.fillText("deep deco stop", parseInt(x+(maxDepth/2)) ,(maxDepth/2)*10+10);
+            graphics.fillText("deep safety stop at "+maxDepth/2+"m", parseInt(x+(maxDepth/2)) ,(maxDepth/2)*10+10);
             graphics.moveTo(parseInt(x+(maxDepth/2)) ,(maxDepth/2)*10);
             graphics.lineTo(parseInt(x+(maxDepth/2)) + 10 ,(maxDepth/2)*10);
 
@@ -243,7 +249,7 @@ function drawDivePlan(bottomTime, totalTime, maxDepth){
             graphics.lineTo(parseInt(x+(maxDepth/2)) + 10 + 10, 50);
 
             //small deco
-            graphics.fillText("small deco stop", parseInt(x+(maxDepth/2)) + 10 + 10, 60);
+            graphics.fillText("small safety stop at 5m", parseInt(x+(maxDepth/2)) + 10 + 10, 60);
             graphics.moveTo(parseInt(x+(maxDepth/2)) + 10 + 10, 50);
             graphics.lineTo(parseInt(x+(maxDepth/2)) + 10 + 10 + 10, 50);
             
@@ -258,7 +264,7 @@ function drawDivePlan(bottomTime, totalTime, maxDepth){
             graphics.lineTo(parseInt(x+(maxDepth-(maxDepth-15))) ,150);
 
             //deep deco
-            graphics.fillText("deep deco stop", parseInt(x+(maxDepth-(maxDepth-15))) ,160);
+            graphics.fillText("deep safety stop at 15m", parseInt(x+(maxDepth-(maxDepth-15))) ,160);
             graphics.moveTo(parseInt(x+(maxDepth-(maxDepth-15))) ,150);
             graphics.lineTo(parseInt(x+(maxDepth-(maxDepth-15))) + 10 ,150);
 
@@ -266,7 +272,7 @@ function drawDivePlan(bottomTime, totalTime, maxDepth){
             graphics.lineTo(parseInt(x+(maxDepth-(maxDepth-15))) + 10 + 10 ,50);
 
             //small deco
-            graphics.fillText("small deco stop", parseInt(x+(maxDepth-(maxDepth-15))) + 10 + 10 ,60);
+            graphics.fillText("small safety stop 5m", parseInt(x+(maxDepth-(maxDepth-15))) + 10 + 10 ,60);
             graphics.moveTo(parseInt(x+(maxDepth-(maxDepth-15))) + 10 + 10 ,50);
             graphics.lineTo(parseInt(x+(maxDepth-(maxDepth-15))) + 10 + 10 +10 ,50);
 
@@ -279,7 +285,7 @@ function drawDivePlan(bottomTime, totalTime, maxDepth){
         graphics.lineTo(x+ parseInt(maxDepth,10), 5*10);
 
         //small deco
-        graphics.fillText("small deco stop", x+ parseInt(maxDepth,10),60);
+        graphics.fillText("small safety stop 5m", x+ parseInt(maxDepth,10),60);
         graphics.moveTo(x+ parseInt(maxDepth,10), 5*10);
         graphics.lineTo(x+ parseInt(maxDepth,10) + parseInt(10,10), 5*10);
     

@@ -43,11 +43,12 @@
         <table>
             <th>
                 <p>
-                    <Select name="Calculations" onchange="showRightInput()" id="Calculations">
-                        <option vlaue="nothing" id="NaN">Choose calulation</option>
+                    <Select name="Calculations" onchange="showRightInput()" id="Calculations" class="CalSelect">
+                        <option value="nothing" id="NaN">Choose calculation</option>
                         <option value="1" id="SAC">Surface Air Consumption</option>
                         <option value="2" id="PlanDive">Plan Dive</option>
                         <option value="3" id="Cylinder">Choose Cylinder</option>
+                        <option value="4" id="HowTo">How to use</option>
                     </Select>
         
                     <br>
@@ -64,7 +65,7 @@
                     <br>
         
                     <!-- Surface Air Consumption -->
-                    <div id="SACdiv">
+                    <div id="SACdiv" class="CaldivSAC">
                         <input type="text" id="SACVT" placeholder="Total Volume of Cylinder">
                         <label>[Liter]</label>
                         <br>
@@ -77,6 +78,7 @@
                         <input type="text" id="SACD" placeholder="Average depth">
                         <label >[Meter]</label>
                         <br>
+                        <br>
                         <button onclick="CalSac()">Calculate</button>
                         <br>
                         <output id="SacOutput"></label>
@@ -84,7 +86,7 @@
         
         
                     <!-- PlanDive -->
-                    <div id="PlanDivediv">
+                    <div id="PlanDivediv" class="CaldivPlanDive">
                         <input type="text" id="BottomTime" placeholder="Time at max depth">
                         <label >[Min.]</label>
                         <br>
@@ -109,13 +111,30 @@
                     </div>
         
                     <!-- Choose Cylinder-->
-                    <div id="Cylinderdiv">
+                    <div id="Cylinderdiv" class="CaldivCylinder">
                         <input type="text" id="AirConsumption" placeholder="Airconsumption">
                         <label>[Liter]</label>
                         <br>
                         <button onclick="CalCylinder()">Calculate</button>
                         <br>
                         <output id="Cylinderout"></label>
+                    </div>
+
+                    <!-- How to use the tool -->
+                    <div id="HowTodiv" class="CaldivDescription">
+                        <p>
+                            <ol class="lileft">
+                                <li>
+                                    Calculate your Surface Air Consumption
+                                </li>
+                                <li>
+                                    Plan your Dive
+                                </li>
+                                <li>
+                                    Choose your Cylinder
+                                </li>
+                            </ol>
+                        </p>
                     </div>
         
                 </p>
