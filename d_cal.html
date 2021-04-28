@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculation</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="jquery.min.js"></script>
+    <script src="visualise.js"></script>
+    <script src="calculation.js"></script>
+    <script src="reset.js"></script>
+    <script src="draw.js"></script>
+
+    <script src="api.js"></script>
+
 
 </head>
 <body onload="calOnLoad()">
@@ -69,19 +77,24 @@
                         <input type="text" id="SACVT" placeholder="Total Volume of Cylinder">
                         <label>[Liter]</label>
                         <br>
+                        <br>
                         <input type="text" id="SACVC" placeholder="Consumed Volume">
                         <label>[Bar]</label>
                         <br>
+                        <br>
                         <input type="text" id="SACT" placeholder="Duration">
                         <label>[Min.]</label>
+                        <br>
                         <br>
                         <input type="text" id="SACD" placeholder="Average depth">
                         <label >[Meter]</label>
                         <br>
                         <br>
                         <button onclick="CalSac()">Calculate</button>
+                        <button onclick="ResetCal()">Reset</button>
                         <br>
-                        <output id="SacOutput"></label>
+                        <br>
+                        <output id="SacOutput">
                     </div>
         
         
@@ -90,13 +103,17 @@
                         <input type="text" id="BottomTime" placeholder="Time at max depth">
                         <label >[Min.]</label>
                         <br>
+                        <br>
                         <input type="text" id="PlanDepth" placeholder="Maximal Depth">
                         <label >[Meter]</label>
+                        <br>
                         <br>
                         <input type="text" id="PlanSAC" placeholder="Surface Air Consumption">
                         <label >[l/min]</label>
                         <br>
+                        <br>
                         <label>Select your highest Brevet</label>
+                        <br>
                         <br>
                         <input type="checkbox" id="Brevet1" name="Brevet1">
                         <label for="Brevet1">Brevet*</label>
@@ -105,9 +122,13 @@
                         <input type="checkbox" id="Brevet3" name="Brevet3">
                         <label for="Brevet3">Brevet***</label>
                         <br>
-                        <button onclick="CalPlan()">Calculate</button>
                         <br>
-                        <output id="Planout"></label>
+                        <button onclick="CalPlan()">Calculate</button>
+                        <button onclick="ResetPlan()">Reset</button>
+                        <button onclick="ResetCanvas()">Reset Canvas</button>
+                        <br>
+                        <br>
+                        <output id="Planout"></output>
                     </div>
         
                     <!-- Choose Cylinder-->
@@ -115,9 +136,12 @@
                         <input type="text" id="AirConsumption" placeholder="Airconsumption">
                         <label>[Liter]</label>
                         <br>
-                        <button onclick="CalCylinder()">Calculate</button>
                         <br>
-                        <output id="Cylinderout"></label>
+                        <button onclick="CalCylinder()">Calculate</button>
+                        <button onclick="ResetCylinder()">Reset</button>
+                        <br>
+                        <br>
+                        <output id="Cylinderout"></output>
                     </div>
 
                     <!-- How to use the tool -->
@@ -145,6 +169,18 @@
                 </canvas>
             </th>
         </table>
+
+        <div class="weather">
+               <label> Please enter the City where you want to check the weather condition for diving</label>
+                <br>
+                <br>
+                <input type="text" id="cityname" placeholder="Name of the City">
+                <button onclick="submitWeather()">Get Weather</button>
+                <br>
+                <br>
+                <output id="weatherout"></output>
+            
+        </div>
         
     </div>
 </body>
