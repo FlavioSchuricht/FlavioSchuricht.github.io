@@ -17,6 +17,11 @@ h2 {
     font-size: 20px;
 }
 
+.navfont {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
@@ -319,4 +324,19 @@ button {
 
 label{
     float: left;
+}
+
+.scrollbar{
+    height: 270px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.table-scroll{
+    display: block;
+}
+
+.LoginPos{
+    margin-top: 10%;
+    margin-left: 20%;
 }
